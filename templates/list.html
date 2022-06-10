@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Все кандидаты</title>
+</head>
+<body>
+    {% if candidates %}
+        <h1>Все кандидаты:</h1>
+        {% for candidate in candidates %}
+            <p><a href="/candidates/{{ candidate.id }}">{{ candidate.name }}</a></p>
+        {% endfor %}
+    {% else %}
+        <h1>Ничего не найдено</h1>
+    {% endif %}
+</body>
+</html>

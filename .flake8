@@ -1,0 +1,10 @@
+[flake8]
+exclude =
+    __pycache__
+    env
+    .env
+    venv
+    .venv
+
+ignore =
+    E501, # line too long (83 > 79 characters)
